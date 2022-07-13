@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Jérémy PRIGENT - Portfolio</title>
+    </head>
+    <body class="page">
+        <header class="header">
+            <nav class="nav nav__header">
+                <ul class="nav__list">
+                    <a href="#section__home" class="nav__link"><li class="nav__item">Home</li></a>
+                    <a href="#section__about" class="nav__link"><li class="nav__item">About</li></a>
+                    <a href="#contact" class="nav__link"><li class="nav__item">Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="section__home" class="section section__home">
+                <h1 class="title title__home">
+                    Hi, I'm Jeremy
+                </h1>
+                <h2 class="subtitle__home">
+                    Learning Front-End Web Development
+                </h2>
+            </section>
+            <section class="section section__about">
+                <h2 id="section__about" class="title title__about">
+                    About me
+                </h2>
+                <p class="text__about">
+                    <span>Hello, dear visitor !</span><br>
+                    <br>
+                    My name is Jeremy, I'm 26 years old, and I live in the city of Brest, in France.<br>
+                    After working in McDonald's in Concarneau, 
+                    from August 2018 to September 2021, 
+                    I am working at Carrefour in Saint-Renan since.<br>
+                    But today, I am looking to become a Front-End Developer. 
+                    I have recently started to learn code again, by myself.<br>
+                    With the help of <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a> courses, everyday, 
+                    I am working on my skills to reach my goal.<br>
+                    I am currently learning JavaScript, in order to understand and use frameworks (such as Vue.js, React.js, etc...) later on.<br>
+                    There are a lot of things I like : <a href="https://www.instagram.com/jermy.prigent/" target="_blank">photography</a>, reading, traveling, japanese culture, pixel art, etc.
+                </p>
+                <ul class="skills__about">
+                    <li class="skill__card"><ion-icon name="logo-html5"></ion-icon>Html</li>
+                    <li class="skill__card"><ion-icon name="logo-css3"></ion-icon>Css</li>
+                    <li class="skill__card"><ion-icon name="logo-javascript"></ion-icon>Javascript</li>
+                    <a href="https://github.com/Halfonx" target="_blank"><li class="skill__card"><ion-icon name="logo-github"></ion-icon>Github</li></a>
+                </ul>
+            </section>
+        </main>
+        <footer id="contact" class="footer">
+            <h2 class="title title__contact">
+                Contact
+            </h2>
+            <form class="contact__form">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Enter your email adress here...">
+                <textarea rows="6" minlength="5" placeholder="Enter your message here..."></textarea>
+                <input type="button" value="Submit">
+            </form>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
