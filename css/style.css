@@ -6,7 +6,7 @@
     --fw-700: 700;
     --fw-900: 900;
 
-    --clr-first: #F1FFFA;
+    --clr-first: #FAFAFA;
     --clr-second: #1B4079;
     --clr-third: #60935D;
 }
@@ -16,10 +16,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .page {
-    width: 100vw;
+    width: 100%;
+    background-color: var(--clr-first);
 }
 
 .header {
@@ -28,13 +30,178 @@
     height: 4rem;
 }
 
-.nav {
-    position: relative;
+.nav__list {
+    list-style: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav__list {
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
+    color: var(--clr-second);
+    background-color: var(--clr-first);
+    border-radius: 2rem;
+    border: 2px solid var(--clr-second);
+    transition-duration: 0.2s;
+    box-shadow: 0 2px 20px rgba(27, 64, 121, 0.4);
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section__home {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title__home {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--clr-second);
+}
+
+.subtitle__home {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--clr-third);
+}
+
+.section__about {
+    width: 100%;
+    height: calc(100vh + 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__about {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--clr-second);
+    margin-bottom: 2rem;
+}
+
+.text__about {
+    text-align: left;
+    font-size: 1.15rem;
+    color: var(--clr-second);
+}
+
+.text__about a {
+    color: var(--clr-second);
+}
+
+.text__about a:visited {
+    color: var(--clr-third);
+}
+
+.skills__about {
     list-style: none;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.skills__about a:visited {
+    color: var(--clr-third);
+}
+
+.skill__card, .skill__card a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0 0.75rem;
+    color: var(--clr-second);
+    font-size: 1.5rem;
+}
+
+ion-icon {
+    font-size: 3rem;
+}
+
+.footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__contact {
+    font-size: 3rem;
+    color: var(--clr-second);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact__form input, .contact__form textarea {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.15rem;
+    color: var(--clr-second);
+    outline: none;
+    border: 0.5px solid var(--clr-third);
+}
+
+.contact__form textarea {
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.contact__form input:focus, .contact__form textarea:focus {
+    outline: 2px solid var(--clr-third);
+    border: 1px solid transparent;
+}
+
+.contact__form input[type=button] {
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: var(--clr-first);
+    color: var(--clr-second);
+    border: 2px solid var(--clr-second);
+    box-shadow: 0 2px 20px rgba(27, 64, 121, 0.4);
+    transition-duration: 0.2s;
+}
+
+
+/* ------- HOVER --------- */
+
+.nav__link:hover {
+    background-color: var(--clr-second);
+    color: var(--clr-first);
+}
+
+.contact__form input[type=button]:hover {
+    background-color: var(--clr-second);
+    color: var(--clr-first);
 }
